@@ -1,8 +1,9 @@
 import express from "express";
 import axios from "axios";
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 const API_URL = "https://favqs.com/api";
 
 app.use(express.static("public"));
