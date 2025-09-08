@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Quotes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=IM+Fell+English&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="quote"><%= quote %></h1>
+      <h2 class="author"><%= author %></h2>
+      <form action="/" method="get">
+        <button type="submit">Get New Quote</button>
+      </form>
+    </div>
+  </body>
+</html>
